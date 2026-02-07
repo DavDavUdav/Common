@@ -12,10 +12,11 @@ namespace ULog.Console
         {
             return level switch
             {
-                LogLevel.Debug => ConsoleColor.Yellow,
+                LogLevel.Debug => ConsoleColor.Gray,
                 LogLevel.Info => ConsoleColor.Green,
                 LogLevel.Warn => ConsoleColor.Yellow,
                 LogLevel.Error => ConsoleColor.Red,
+                _ => ConsoleColor.Gray,
             };
         }
     }
