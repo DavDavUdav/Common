@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="ConsoleLogger.cs" />
     <Compile Include="LogLevelExtensions.cs" />
-    <Compile Include="MessageBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

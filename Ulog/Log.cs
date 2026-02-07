@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Ulog.Interfaces;
+using ULog;
 
 namespace Ulog
 {
@@ -19,6 +20,7 @@ namespace Ulog
 
         private static void Write(LogLevel logLevel, string msg)
         {
+            msg = MessageBuilder.Build(msg, logLevel);
             foreach (var logger in _Loggers)
             {
                 logger.Log(logLevel, msg);
